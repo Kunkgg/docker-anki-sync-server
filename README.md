@@ -11,6 +11,19 @@ Has been tested and has worked on:
 ### Based on the work of tsudoko
 
 * https://github.com/tsudoko/anki-sync-server
+* https://github.com/kuklinistvan/docker-anki-sync-server
+
+### Description
+
+I tried to use the origin repository but encountered some error on my Ubuntu 18.04. 
+
+ [Sync media 404 #36](https://github.com/tsudoko/anki-sync-server/issues/36)  and `Exception: Outdated database schema, run utils/migrate_user_tables.py`
+
+I fixed them, and issue to origin repository, no response.
+
+So I build the new repository for using anki-sync-server easier.
+
+I rebuild it with Chinese aliyun mirror. It is faster for me.
 
 ## Usage
 
@@ -26,7 +39,7 @@ If you've managed put your Anki devices on the same (typically LAN) network, you
        -p 27701:27701 \
        --name anki-container \
        --rm \
-       kuklinistvan/anki-sync-server:latest
+       kunka/anki-sync-server:latest
 
 You can interrupt this instance anytime by hitting Ctrl+C. You can restart the server with the same command. Its data is going to be preserved in `$ANKI_SYNC_DATA_DIR`.
 
@@ -51,7 +64,7 @@ Docker will take care of starting the service on boot so you don't have to worry
        -p "$HOST_PORT":27701 \
        --name anki-container \
        --restart always \
-       kuklinistvan/anki-sync-server:latest
+       kunka/anki-sync-server:latest
 
 #### HTTPS Encryption with Apache Proxy
 
