@@ -1,7 +1,7 @@
 #!/bin/sh
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 cd "$DIR"
-git clone https://github.com/tsudoko/anki-sync-server
+git clone https://github.com/Kunkgg/anki-sync-server.git
 cd anki-sync-server
 git submodule update --init
 cd ..
