@@ -24,9 +24,13 @@ I fixed them, and issue to origin repository, no response.
 
 So I build the new repository for using anki-sync-server easier.
 
-I rebuild it with Chinese aliyun mirror. It is faster for me.
+In the file `Dockerfile.cn`, I rebuild it with Chinese aliyun mirror. It is faster for me.
 
 ## Usage
+
+### The simple way
+
+On Linux, run the `run.sh` roughly, it will create a anki-sync-server container, listen port `27701`, mount anki-sync data on `$HOME/ankisync-data` directory. Of course, you can change the default port and data directory in `run.sh` manually.
 
 ### One-time setup
 
