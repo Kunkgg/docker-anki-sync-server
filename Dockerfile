@@ -20,4 +20,4 @@ RUN \
     cd /app/anki-sync-server
 
 EXPOSE 27701
-
+CMD python -m ankisyncd

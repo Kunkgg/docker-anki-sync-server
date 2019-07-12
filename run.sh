@@ -12,5 +12,4 @@ docker run -itd \
    -p "$HOST_PORT":27701 \
    --name anki-sync \
    --restart always \
-   kunka/anki-sync-server:latest \
-   python -m ankisyncd
+   kunka/anki-sync-server:latest
