@@ -1,0 +1,3 @@
+[submodule "anki-sync-server"]
+	path = anki-sync-server
+	url = https://github.com/Kunkgg/anki-sync-server.git
